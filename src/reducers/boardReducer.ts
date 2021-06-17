@@ -19,6 +19,8 @@ const generateNewBoard = () => {
   return newBoard;
 };
 
+const generateRandomCoordinate = () => {};
+
 const getCellRowAndColumnNumber = (number: number) => {};
 
 const isNumberAlreadyInRow = (number: number) => {};

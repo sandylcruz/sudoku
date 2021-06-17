@@ -3,15 +3,22 @@ import React from "react";
 import styled from "styled-components";
 
 const H1 = styled.h1`
-  font: helvetica;
-  font-size: 20ps;
+  font-family: helvetica;
+  font-size: 40px;
+  text-align: center;
+`;
+
+const P = styled.p`
+  font-family: helvetica;
+  font-size: 20px;
+  text-align: center;
 `;
 
 function App() {
   return (
     <div className="App">
       <H1>Sudoku</H1>
-      <p>asdfasdf</p>
+      <P>asdfasdf</P>
     </div>
   );
 }

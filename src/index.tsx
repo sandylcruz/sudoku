@@ -6,12 +6,6 @@ import { compose, createStore } from "redux";
 import App from "./components/App";
 import rootReducer from "./reducers/rootReducer";
 
-// declare global {
-//   interface Window {
-//     __REDUX_DEVTOOLS_EXTENSION_COMPOSE__?: typeof compose;
-//   }
-// }
-
 const composeEnhancers =
   // @ts-expect-error
   (window.__REDUX_DEVTOOLS_EXTENSION__ &&
