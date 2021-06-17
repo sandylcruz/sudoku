@@ -2,7 +2,7 @@ import React from "react";
 
 import styled from "styled-components";
 
-import Board from "./Board";
+import Game from "./Game";
 
 const H1 = styled.h1`
   font-family: alegreya sans sc thin;
@@ -21,7 +21,7 @@ function App() {
   return (
     <div className="App">
       <H1>Sudoku</H1>
-      <Board />
+      <Game />
     </div>
   );
 }

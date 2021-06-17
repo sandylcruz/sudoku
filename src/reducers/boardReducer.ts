@@ -15,20 +15,18 @@ const generateNewBoard = () => {
       newBoard.push(newCell);
     }
   }
-  console.log(newBoard);
   return newBoard;
 };
 
 const generateRandomCoordinate = () => {
   const row: number = Math.floor(Math.random() * 9);
   const col: number = Math.floor(Math.random() * 9);
-  const coordinatePair: number[] = [row, col];
-  return coordinatePair;
+  return [row, col];
 };
 
 const generateSeventeenCoordinatePairs = () => {
   const coordinatesArray = [];
-  for (let i = 0; i < 9; i++) {
+  for (let i = 0; i <= 17; i++) {
     const coordinate = generateRandomCoordinate();
     coordinatesArray.push(coordinate);
   }
@@ -36,15 +34,21 @@ const generateSeventeenCoordinatePairs = () => {
   return coordinatesArray;
 };
 
-console.log(generateSeventeenCoordinatePairs());
+const generateSolvedSudokuBoard = () => {};
 
 const getRowNumber = (number: number) => {
   return Math.floor(number / 9);
 };
 
-const getColNumber = (number: number) => {};
+const getColNumber = (number: number) => {
+  return number % 19;
+};
 
-const getCellRowAndColumnNumber = (number: number) => {};
+const otherNumbersInBox = (number: number) => {};
+
+const getCellRowAndColumnNumber = (number: number) => {
+  return [getRowNumber(number), getColNumber(number)];
+};
 
 const isNumberAlreadyInRow = (number: number) => {};
 
