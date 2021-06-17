@@ -2,8 +2,8 @@ import React from "react";
 
 import Cell from "./Cell";
 
-const Board = React.memo(() => {
+const Row = React.memo(() => {
   return <Cell />;
 });
 
-export default Board;
+export default Row;
