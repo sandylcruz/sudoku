@@ -1,9 +1,14 @@
 import React from "react";
 
-import Cell from "./Cell";
+import Row from "./Row";
 
 const Board = React.memo(() => {
-  return <Cell />;
+  //  <BoardContainer layout>
+  //    {grid.map((row, index) => (
+  //      <Row key={index} row={row} />
+  //    ))}
+  //  </BoardContainer>;
+  return <Row />;
 });
 
 export default Board;

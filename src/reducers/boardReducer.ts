@@ -19,7 +19,30 @@ const generateNewBoard = () => {
   return newBoard;
 };
 
-const generateRandomCoordinate = () => {};
+const generateRandomCoordinate = () => {
+  const row: number = Math.floor(Math.random() * 9);
+  const col: number = Math.floor(Math.random() * 9);
+  const coordinatePair: number[] = [row, col];
+  return coordinatePair;
+};
+
+const generateSeventeenCoordinatePairs = () => {
+  const coordinatesArray = [];
+  for (let i = 0; i < 9; i++) {
+    const coordinate = generateRandomCoordinate();
+    coordinatesArray.push(coordinate);
+  }
+
+  return coordinatesArray;
+};
+
+console.log(generateSeventeenCoordinatePairs());
+
+const getRowNumber = (number: number) => {
+  return Math.floor(number / 9);
+};
+
+const getColNumber = (number: number) => {};
 
 const getCellRowAndColumnNumber = (number: number) => {};
 
