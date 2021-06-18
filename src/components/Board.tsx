@@ -8,11 +8,13 @@ const BodyContainer = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: center;
-
-  border: 2px solid purple;
 `;
 
-const BorderDiv = styled.div``;
+const BorderDiv = styled.div`
+  display: flex;
+  flex-direction: row;
+  border: 2px solid purple;
+`;
 
 interface BoardProps {
   grid: Array<Cell>;

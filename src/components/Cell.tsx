@@ -9,8 +9,21 @@ const StyledCell = styled.div`
   font-family: helvetica;
 `;
 
+const TextDiv = styled.div`
+  display: flex;
+  text-align: center;
+  width: 55px;
+  height: 55px;
+  margin-left: 21px;
+  margin-top: 21px;
+`;
+
 const Cell = React.memo(() => {
-  return <StyledCell>Hi</StyledCell>;
+  return (
+    <StyledCell>
+      <TextDiv>Hi</TextDiv>
+    </StyledCell>
+  );
 });
 
 export default Cell;
