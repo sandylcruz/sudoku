@@ -51,21 +51,8 @@ const getOtherCoordinatesInBox = (number: number) => {
   let rangeStart;
   let rangeEnd;
 
-  if (row === 0 || row === 1 || row === 2) {
-    rangeStart = 0;
-  } else if (row === 3 || row === 4 || row === 5) {
-    rangeStart = 1;
-  } else {
-    rangeStart = 2;
-  }
-
-  if (col === 0 || col === 1 || col === 2) {
-    rangeEnd = 0;
-  } else if (col === 3 || col === 4 || col === 5) {
-    rangeEnd = 1;
-  } else {
-    rangeEnd = 2;
-  }
+  rangeStart = Math.floor(row / 3);
+  rangeEnd = Math.floor(col / 3);
 
   const coordinatesArray = [];
 

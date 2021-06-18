@@ -1,12 +1,13 @@
 import React from "react";
 
 import Row from "./Row";
+import { Cell } from "../types";
 
 interface BoardProps {
-  grid: 
+  grid: Array<Cell>;
 }
 
-const Board = React.memo(() => {
+const Board = React.memo<BoardProps>(() => {
   // const grid = [];
   // for (let row = 0; row <= 4; row++) {
   //   grid.push([]);
