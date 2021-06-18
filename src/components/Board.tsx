@@ -13,7 +13,7 @@ const BodyContainer = styled.div`
 const BorderDiv = styled.div`
   display: flex;
   flex-direction: row;
-  border: 2px solid purple;
+  border: 4px solid blue;
 `;
 
 interface BoardProps {

@@ -7,6 +7,12 @@ const RowContainer = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
+  &:nth-child(3) {
+    border-right: 4px solid blue;
+  }
+  &:nth-child(6) {
+    border-right: 4px solid blue;
+  }
 `;
 
 const Row = React.memo(({}) => {

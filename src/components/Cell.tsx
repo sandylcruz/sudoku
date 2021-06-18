@@ -7,6 +7,12 @@ const StyledCell = styled.div`
   width: 55px;
   border: 1px solid black;
   font-family: helvetica;
+  &:nth-child(3) {
+    border-bottom: 4px solid blue;
+  }
+  &:nth-child(6) {
+    border-bottom: 4px solid blue;
+  }
 `;
 
 const TextDiv = styled.div`
