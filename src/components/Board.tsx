@@ -1,7 +1,18 @@
 import React from "react";
 
+import styled from "styled-components";
 import Row from "./Row";
 import { Cell } from "../types";
+
+const BodyContainer = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+  border: 2px solid purple;
+`;
+
+const BorderDiv = styled.div``;
 
 interface BoardProps {
   grid: Array<Cell>;
@@ -16,7 +27,21 @@ const Board = React.memo<BoardProps>(() => {
   //   }
   // }
   // console.log("GRID:", grid);
-  return <Row />;
+  return (
+    <BodyContainer>
+      <BorderDiv>
+        <Row />
+        <Row />
+        <Row />
+        <Row />
+        <Row />
+        <Row />
+        <Row />
+        <Row />
+        <Row />
+      </BorderDiv>
+    </BodyContainer>
+  );
 });
 
 export default Board;

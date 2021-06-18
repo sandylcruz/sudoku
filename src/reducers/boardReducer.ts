@@ -48,11 +48,8 @@ const getOtherCoordinatesInBox = (number: number) => {
   const row = getRowNumber(number);
   const col = getColNumber(number);
 
-  let rangeStart;
-  let rangeEnd;
-
-  rangeStart = Math.floor(row / 3);
-  rangeEnd = Math.floor(col / 3);
+  const rangeStart = Math.floor(row / 3);
+  const rangeEnd = Math.floor(col / 3);
 
   const coordinatesArray = [];
 

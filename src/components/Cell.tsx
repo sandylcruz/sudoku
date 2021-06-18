@@ -3,10 +3,10 @@ import React from "react";
 import styled from "styled-components";
 
 const StyledCell = styled.div`
-  height: 40px;
-  width: 40px;
+  height: 55px;
+  width: 55px;
   border: 1px solid black;
-  font-family: raleway;
+  font-family: helvetica;
 `;
 
 const Cell = React.memo(() => {

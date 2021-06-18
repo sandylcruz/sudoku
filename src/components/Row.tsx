@@ -1,6 +1,13 @@
 import React from "react";
 
+import styled from "styled-components";
 import Cell from "./Cell";
+
+const RowContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+`;
 
 const Row = React.memo(({}) => {
   // return (
@@ -10,7 +17,19 @@ const Row = React.memo(({}) => {
   //     ))}
   //   </RowContainer>
   // );
-  return <Cell />;
+  return (
+    <RowContainer>
+      <Cell />
+      <Cell />
+      <Cell />
+      <Cell />
+      <Cell />
+      <Cell />
+      <Cell />
+      <Cell />
+      <Cell />
+    </RowContainer>
+  );
 });
 
 export default Row;
