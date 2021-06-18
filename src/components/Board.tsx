@@ -2,6 +2,10 @@ import React from "react";
 
 import Row from "./Row";
 
+interface BoardProps {
+  grid: 
+}
+
 const Board = React.memo(() => {
   // const grid = [];
   // for (let row = 0; row <= 4; row++) {

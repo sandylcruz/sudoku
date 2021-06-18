@@ -44,10 +44,38 @@ const getColNumber = (number: number) => {
   return number % 19;
 };
 
-const otherNumbersInBox = (number: number) => {};
+const getOtherCoordinatesInBox = (number: number) => {
+  const row = getRowNumber(number);
+  const col = getColNumber(number);
 
-const getCellRowAndColumnNumber = (number: number) => {
-  return [getRowNumber(number), getColNumber(number)];
+  let rangeStart;
+  let rangeEnd;
+
+  if (row === 0 || row === 1 || row === 2) {
+    rangeStart = 0;
+  } else if (row === 3 || row === 4 || row === 5) {
+    rangeStart = 1;
+  } else {
+    rangeStart = 2;
+  }
+
+  if (col === 0 || col === 1 || col === 2) {
+    rangeEnd = 0;
+  } else if (col === 3 || col === 4 || col === 5) {
+    rangeEnd = 1;
+  } else {
+    rangeEnd = 2;
+  }
+
+  const coordinatesArray = [];
+
+  for (let i = rangeStart; i < rangeStart + 3; i++) {
+    for (let j = rangeStart; j < rangeStart + 3; j++) {
+      coordinatesArray.push([i, j]);
+    }
+  }
+
+  return coordinatesArray;
 };
 
 const isNumberAlreadyInRow = (number: number) => {};
